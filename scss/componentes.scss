@@ -1,0 +1,139 @@
+// componentes.scss  ->  se compila a  scss/dist/componentes.css
+@import 'variables';
+
+/* cajas que se usan en todo */
+
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    color: $blanco;
+    padding-bottom: 10px;
+    background-color: $rojo-franja;
+}
+
+.fila {
+    display: flex;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+.fila.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    color: $blanco;
+    isolation: isolate;
+}
+
+.fila.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../imagenes/campus.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.45);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.fila.hero h1, .fila.hero p {
+    color: $blanco;
+}
+
+.fila.hero button {
+    background-color: $rojo-claro;
+    color: $blanco;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.producto-foto {
+    background-color: $gris-foto;
+    color: $negro;
+    text-align: center;
+    padding: 40px 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.producto {
+    width: 300px;
+    background-color: $blanco;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid $gris-borde;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px $gris-sombra;
+}
+
+.producto h2 {
+    font-size: 20px;
+}
+
+.producto h3 {
+    color: $rojo-claro;
+}
+
+.producto p {
+    color: $gris-texto;
+}
+
+.producto button {
+    background-color: $rojo-claro;
+    color: $blanco;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: $rojo-claro-hover;
+}
+
+/* el tamano de la foto de la tarjeta (.producto img) ahora esta en less/fotos.less */
+
+.destacado {
+    background-color: $rojo-claro;
+    color: $blanco;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.destacado button {
+    background-color: $blanco;
+    color: $rojo-claro;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.destacado button:hover {
+    background-color: $rojo-muy-oscuro;
+    color: $trigo;
+}
+
+.producto {
+    transition: transform 0.3s ease; 
+}
+
+.producto:hover {
+    transform: scale(1.05); 
+}
+
+
+.fondo-pagina {
+    background: linear-gradient($velo, $velo),
+                url("../../imagenes/fondo.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
+}
+
+.fondo-pagina .breadcrumb {
+    --bs-breadcrumb-divider-color: #{$blanco-transparente};
+    --bs-breadcrumb-item-active-color: #{$blanco};
+}

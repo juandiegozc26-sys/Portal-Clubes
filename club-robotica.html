@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Robótica y Mecatrónica - USMP</title>
+    <link rel="stylesheet" href="scss/dist/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/clubes_info.css">
+    <link rel="stylesheet" href="scss/dist/clubes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<header>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" aria-label="Ir a la página principal (USMP)" title="Ir a la página principal">
+                <img src="imagenes/logo.jpg" alt="logo USMP" class="logo-usmp">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clubesE.html">Clubes abiertos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="todos-los-clubes.html">Todos los clubes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Register.html">Registrarse a un Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="helpE.html">Ayuda por facultades</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow-1 fondo-pagina overflow-x-hidden">
+
+    <div class="titulo">CLUB DE ROBÓTICA Y MECATRÓNICA</div>
+
+    <div class="caja_club container py-4 flex-wrap gap-4">
+
+        <nav aria-label="breadcrumb" data-aos="fade-down" class="w-100">
+            <ol class="breadcrumb small mb-0">
+                <li class="breadcrumb-item"><a class="link-light" href="index.html">Portal USMP</a></li>
+                <li class="breadcrumb-item"><a class="link-light" href="todos-los-clubes.html">Todos los clubes</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Club de Robótica y Mecatrónica</li>
+            </ol>
+        </nav>
+
+        <!-- Caja del bloque del club NO MOVER -->
+        <div class="caja_club row col-12 col-lg m-0 g-4 align-items-start bg-white border rounded-3 shadow-sm p-3 p-md-4">
+
+            <div class="col-12 col-md-5 col-lg-4" data-aos="fade-right">
+                <img src="imagenes/robotica2.jpg" alt="Imagen del Club de Robótica y Mecatrónica" class="img-fluid rounded-3 w-100">
+                <p class="small text-muted mt-3 mb-0">
+                    <i class="bi bi-people-fill" aria-hidden="true"></i> Club estudiantil · Facultad de Ingeniería y Arquitectura · USMP
+                </p>
+            </div>
+
+            <div class="col-12 col-md-7 col-lg-8" data-aos="fade-left">
+                <span class="etiqueta etiqueta-contorno etiqueta-azul">Tecnología</span>
+                <h1 class="h3">Club de Robótica y Mecatrónica</h1>
+                <p class="lead">Diseño, construcción y programación de robots en equipo.</p>
+
+                <h2 class="h5 mt-4">¿De qué trata?</h2>
+                <p>El Club de Robótica y Mecatrónica es el lugar para quienes quieren diseñar, construir y programar robots. Combina electrónica, mecánica y programación en proyectos que se desarrollan en equipo.</p>
+
+                <h2 class="h5 mt-4">¿Qué harás en el club?</h2>
+                <ul>
+                    <li>Diseñar y construir prototipos de robots.</li>
+                    <li>Programar sensores, motores y controladores.</li>
+                    <li>Trabajar en equipo en retos y proyectos tecnológicos.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Caja de de inscripcion NO MOVER-->
+        <div class="text-center col-12 col-lg-2 align-self-start bg-white rounded-3 shadow-sm p-3" data-aos="zoom-in">
+            <p class="mb-2">¿Te interesa? Regístrate y únete al club.</p>
+            <a href="Register.html?club=robotica" class="btn btn-usmp w-100">Inscribirme</a>
+        </div>
+
+    </div>
+
+</main>
+
+    <footer>
+        <div class="contenedor contenedor-footer flex-column flex-md-row px-4">
+            <div>
+                <h2>Universidad de San Martín de Porres</h2>
+                <p>Av. Circunvalación del Golf Los Incas Cdra. 3, Santa Anita, Lima</p>
+            </div>
+            <div>
+                <h2>Facultades</h2>
+                <p><a href="https://fia.usmp.edu.pe/" target="_blank" rel="noopener">Ing. y Arquitectura</a></p>
+            </div>
+            <div>
+                <h2>Redes sociales</h2>
+                <p>
+                    <a href="https://www.usmp.edu.pe/" target="_blank" rel="noopener" aria-label="Facebook de la USMP"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.usmp.edu.pe/" target="_blank" rel="noopener" aria-label="Instagram de la USMP"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.usmp.edu.pe/" target="_blank" rel="noopener" aria-label="YouTube de la USMP"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+        <p>© 2026 Universidad de San Martín de Porres</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true, disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches });
+</script>
+</body>
+</html>

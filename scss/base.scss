@@ -1,0 +1,23 @@
+// base.scss  ->  se compila a  scss/dist/base.css
+// Es el mismo CSS de siempre, pero los colores salen de scss/_variables.scss
+@import 'variables';
+
+/* no mover */
+
+body {
+    font-family: Arial;
+    background-color: $gris-fondo;
+    margin: 0;
+    padding-top: 65px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+/* las variables de color ahora estan en scss/colores.scss (se compila a  scss/dist/colores.css) */
+
+

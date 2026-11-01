@@ -1,0 +1,44 @@
+:root {
+  --usmp-red: #800000;
+  --usmp-dark-red: #5d0000;
+}
+
+.etiqueta-roja {
+  background-color: #a91d2f;
+  color: white;
+}
+
+.etiqueta-contorno {
+  background: transparent;
+  border: 1px solid;
+}
+.etiqueta-contorno.etiqueta-naranja {
+  color: #d97706;
+  border-color: #d97706;
+}
+.etiqueta-contorno.etiqueta-azul {
+  color: #2563eb;
+  border-color: #2563eb;
+}
+.etiqueta-contorno.etiqueta-verde {
+  color: #16a34a;
+  border-color: #16a34a;
+}
+.etiqueta-contorno.etiqueta-roja {
+  color: #a91d2f;
+  border-color: #a91d2f;
+}
+
+.btn.btn-usmp {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn.btn-usmp:hover, .btn.btn-usmp:focus-visible {
+  background-color: #5d0000;
+  border-color: #5d0000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,40 @@
+// ============================================================
+//  _variables.scss  ->  TODOS los colores de la web en un solo lugar
+
+
+// --- Rojos de la USMP 
+$rojo-usmp:          #800000;   // barra de menú, botón .btn-usmp
+$rojo-usmp-oscuro:   #5d0000;   // hover del botón .btn-usmp
+$rojo-claro:         #a91d2f;   // botones de tarjetas, títulos h3, etiquetas, caja .destacado
+$rojo-claro-hover:   #7a1522;   // hover de los botones de tarjeta
+$rojo-franja:        #3a0101;   // barra de títulos (.titulo)
+$rojo-muy-oscuro:    #470000;   // hover del botón del .destacado
+$rojo-menu-hover:    #e90c0c;   // hover de los enlaces del menú
+$rojo-navbar-viejo:  #640505;   // color anterior de la barra (lo pisa $rojo-usmp)
+$vino:               #800020;   // encabezados del acordeón (helpE)
+$vino-oscuro:        rgb(59, 1, 1);   // caja "Centro de Ayuda" (helpE)
+
+// --- Colores de las etiquetas de los clubes 
+$azul:               #2563eb;
+$naranja:            #d97706;
+$verde:              #16a34a;
+
+// --- Neutros 
+$blanco:             #ffffff;
+$negro:              #000000;
+$trigo:              wheat;
+$gris-fondo:         #f2f2f2;   
+$gris-oscuro:        #222;      
+$gris-claro:         #cfcfcf;   
+$gris-texto:         #555;
+$gris-borde:         #ccc;
+$gris-sombra:        #aaa;
+$gris-foto:          #d9d9d9;
+$texto-formulario:   #333333;
+
+// --- Transparencias -----------------------------------------------------
+$velo:               rgba(0, 0, 0, 0.65);       
+$sombra-suave:       rgba(0, 0, 0, 0.35);
+$sombra-fuerte:      rgba(0,0,0,0.4);
+$foco-rojo:          rgba(128, 0, 0, 0.25);     
+$blanco-transparente: rgba(255, 255, 255, 0.7);

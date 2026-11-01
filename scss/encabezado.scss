@@ -1,0 +1,73 @@
+// encabezado.scss  ->  se compila a  scss/dist/encabezado.css
+@import 'variables';
+
+/* Encabezadp
+NO MOVER*/
+
+.navbar {
+    background-color: $rojo-navbar-viejo;
+    padding: 10px 25px;
+}
+
+.logo-usmp {
+    height: 57px;
+    width: auto;
+    border-radius: 6px;
+}
+
+.menu {
+    text-align: center;
+    background-color: $blanco;
+    padding: 15px;
+    border-bottom: 1px dashed $negro;
+}
+
+.menu a {
+    color: $negro;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.menu a:hover {
+    color: $rojo-claro;
+}
+
+.nav-item a {
+    color: $negro;
+}
+
+.nav-item a:hover {
+    color: $rojo-menu-hover;
+}
+
+.navbar {
+    background-color: var(--usmp-red) !important;
+}
+
+.logo-usmp {
+    height: 45px;
+    object-fit: contain;
+}
+
+.navbar-brand .logo-usmp {
+    mix-blend-mode: screen;
+    border-radius: 0;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.navbar-brand:hover .logo-usmp,
+.navbar-brand:focus-visible .logo-usmp {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+}
+
+.navbar {
+    box-shadow: 0 2px 10px $sombra-suave;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--usmp-red);
+    font-weight: bold;
+    border-left: 4px solid var(--usmp-red);
+    padding-left: 10px;
+}

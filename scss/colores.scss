@@ -1,0 +1,43 @@
+
+@import 'variables';
+
+:root {
+    --usmp-red: #{$rojo-usmp};
+    --usmp-dark-red: #{$rojo-usmp-oscuro};
+}
+
+@mixin etiqueta-color($color) {
+    color: $color;
+    border-color: $color;
+}
+
+.etiqueta-roja {
+    background-color: $rojo-claro;
+    color: white;
+}
+
+.etiqueta-contorno {
+    background: transparent;
+    border: 1px solid;
+
+    &.etiqueta-naranja { @include etiqueta-color($naranja); }
+    &.etiqueta-azul    { @include etiqueta-color($azul); }
+    &.etiqueta-verde   { @include etiqueta-color($verde); }
+    &.etiqueta-roja    { @include etiqueta-color($rojo-claro); }
+}
+
+.btn.btn-usmp {
+    background-color: $rojo-usmp;
+    border-color: $rojo-usmp;
+    color: $blanco;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+        background-color: $rojo-usmp-oscuro;
+        border-color: $rojo-usmp-oscuro;
+        color: $blanco;
+        transform: translateY(-2px);
+    }
+}

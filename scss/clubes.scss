@@ -1,0 +1,105 @@
+// clubes.scss  ->  se compila a  scss/dist/clubes.css
+@import 'variables';
+
+/* clubes */
+
+.portada-clubes {
+    min-height: 280px;
+    align-items: center;
+}
+
+.ruta-navegacion {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.ruta-navegacion a {
+    color: $blanco;
+}
+
+.boton-contorno {
+    background: transparent;
+    border: 1px solid $blanco;
+    margin-left: 10px;
+}
+
+.encabezado-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ver-todo {
+    color: $blanco;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.producto-ancho {
+    width: 380px;
+}
+
+.producto-horizontal {
+    width: 320px;
+    display: flex;
+    gap: 12px;
+    text-align: left;
+    align-items: center;
+}
+
+.producto-horizontal h2 {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.contenedor-grid {
+    flex-wrap: wrap;
+}
+
+.etiqueta {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.destacado-lista {
+    width: 380px;
+    text-align: left;
+}
+
+.destacado-lista a {
+    color: $blanco;
+    text-decoration: underline;
+}
+
+
+.portada-clubes .carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+
+.portada-clubes .carousel-control-prev, .portada-clubes .carousel-control-next {
+    width: 60px;
+    background: transparent !important;
+    border: none !important;
+    opacity: 1;
+}
+
+.portada-clubes .carousel-control-prev:hover, .portada-clubes .carousel-contfrol-next:hover {
+    background: transparent !important;
+}
+
+.portada-clubes .carousel-control-prev-icon, .portada-clubes .carousel-control-next-icon {
+    background-color: $sombra-suave;
+    border-radius: 50%;
+    padding: 22px;
+    background-size: 50%;
+}

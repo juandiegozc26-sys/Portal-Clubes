@@ -1,0 +1,10 @@
+.caja_club{
+    margin-top: 25px;
+    display: flex;
+}
+
+.caja_clubUNO{
+  display: flex;
+  justify-content: space-between;
+  width: 200%; /* O el ancho que necesites */
+}

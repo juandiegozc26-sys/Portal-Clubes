@@ -1,0 +1,17 @@
+/* no mover */
+body {
+  font-family: Arial;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding-top: 65px;
+}
+
+.contenedor {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/* las variables de color ahora estan en scss/colores.scss (se compila a  scss/dist/colores.css) */

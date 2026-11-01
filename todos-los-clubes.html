@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los clubes - USMP</title>
+    <link rel="stylesheet" href="scss/dist/estilos.css">
+    <link rel="stylesheet" href="scss/dist/clubes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/dist/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<header>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" aria-label="Ir a la página principal (USMP)" title="Ir a la página principal">
+                <img src="imagenes/logo.jpg" alt="logo USMP" class="logo-usmp">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clubesE.html">Clubes abiertos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="todos-los-clubes.html">Todos los clubes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Register.html">Registrarse a un Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="helpE.html">Ayuda por facultades</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow-1 fondo-pagina overflow-x-hidden">
+
+    <div class="titulo">TODOS LOS CLUBES</div>
+
+    <div class="container py-4">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb small">
+                <li class="breadcrumb-item"><a class="link-light" href="index.html">Portal USMP</a></li>
+                <li class="breadcrumb-item"><a class="link-light" href="clubesE.html">Clubes abiertos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Todos los clubes</li>
+            </ol>
+        </nav>
+
+        <p class="lead text-white" data-aos="fade-down">Explora los 12 clubes estudiantiles de la Facultad de Ingeniería y Arquitectura, organizados por categoría. Entra a cada club para conocer más o inscríbete directamente.</p>
+
+        <div class="d-flex flex-wrap gap-2 mb-4" aria-label="Categorías de clubes">
+            <a class="btn btn-outline-light btn-sm rounded-pill" href="#deportes">Deportes y bienestar</a> <a class="btn btn-outline-light btn-sm rounded-pill" href="#cultura">Cultura y comunidad</a> <a class="btn btn-outline-light btn-sm rounded-pill" href="#tecnologia">Tecnología e innovación</a> <a class="btn btn-outline-light btn-sm rounded-pill" href="#academicos">Académicos y profesionales</a>
+        </div>
+
+        <section id="deportes" class="mb-5">
+            <h2 class="h4 border-bottom border-light text-white pb-2 mb-3" data-aos="fade-right">Deportes y bienestar <span class="badge text-bg-secondary rounded-pill align-middle fs-6">3</span></h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light"><img src="imagenes/gimnasio.jpg" alt="Imagen del Club de Gimnasio" class="object-fit-contain rounded-top"></div>
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-azul">Bienestar y deporte</span>
+                            <h3 class="h5 card-title">Club de Gimnasio</h3>
+                            <p class="card-text text-secondary small mb-0">Actividades y espacios para el cuidado de la salud física.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-gimnasio.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=gimnasio" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light"><img src="imagenes/basquet.jpg" alt="Imagen del Club de Básquet" class="object-fit-contain rounded-top"></div>
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-azul">Deportivo</span>
+                            <h3 class="h5 card-title">Club de Básquet</h3>
+                            <p class="card-text text-secondary small mb-0">Entrenamientos y torneos internos para toda la facultad.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-basquet.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=basquet" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light">
+                        <img src="imagenes/ajedrez.jpg" alt="Imagen del Club de Ajedrez">    
+                        
+                        </div>
+                                
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-azul">Deporte mental</span>
+                            <h3 class="h5 card-title">Club de Ajedrez</h3>
+                            <p class="card-text text-secondary small mb-0">Partidas, entrenamientos y torneos para desarrollar el pensamiento estratégico.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-ajedrez.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=ajedrez" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultura" class="mb-5">
+            <h2 class="h4 border-bottom border-light text-white pb-2 mb-3" data-aos="fade-right">Cultura y comunidad <span class="badge text-bg-secondary rounded-pill align-middle fs-6">2</span></h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light"><img src="imagenes/marinera.jpg" alt="Imagen del Club de Marinera" class="object-fit-contain rounded-top"></div>
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-roja">Cultural</span>
+                            <h3 class="h5 card-title">Club de Marinera</h3>
+                            <p class="card-text text-secondary small mb-0">Talleres de danza y cultura peruana para todos los estudiantes.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-marinera.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=marinera" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light">
+                        <img src="imagenes/voluntarios.jpg" alt="Imagen del Club de Voluntariado Social">    
+                        
+                        </div>                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-roja">Responsabilidad social</span>
+                            <h3 class="h5 card-title">Club de Voluntariado Social</h3>
+                            <p class="card-text text-secondary small mb-0">Proyectos solidarios y de apoyo a la comunidad organizados por estudiantes.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-voluntariado.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=voluntariado" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologia" class="mb-5">
+            <h2 class="h4 border-bottom border-light text-white pb-2 mb-3" data-aos="fade-right">Tecnología e innovación <span class="badge text-bg-secondary rounded-pill align-middle fs-6">3</span></h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light"><img src="imagenes/robotica.jpg" alt="Imagen del Club de Innovación Electrónica (ARDUINO)" class="object-fit-contain rounded-top"></div>
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-azul">Club recreativo</span>
+                            <h3 class="h5 card-title">Club de Innovación Electrónica (ARDUINO)</h3>
+                            <p class="card-text text-secondary small mb-0">Club de innovación electrónica, con sistemas ARDUINO, Isaac_UNI.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-electronica.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=innovacion-electronica" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light">
+                        <img src="imagenes/robotica2.jpg" alt="Imagen del Club de Robótica y Mecatrónica">    
+                        
+                        </div>                    
+                            <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-azul">Tecnología</span>
+                            <h3 class="h5 card-title">Club de Robótica y Mecatrónica</h3>
+                            <p class="card-text text-secondary small mb-0">Diseño, construcción y programación de robots en equipo.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-robotica.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=robotica" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light">
+                        <img src="imagenes/sofware.jpg" alt="Imagen del Club de Programación y Desarrollo de Software">    
+                        
+                        </div>                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-azul">Tecnología</span>
+                            <h3 class="h5 card-title">Club de Programación y Desarrollo de Software</h3>
+                            <p class="card-text text-secondary small mb-0">Aprende y practica programación con proyectos reales entre estudiantes.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-programacion.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=programacion" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academicos" class="mb-5">
+            <h2 class="h4 border-bottom border-light text-white pb-2 mb-3" data-aos="fade-right">Académicos y profesionales <span class="badge text-bg-secondary rounded-pill align-middle fs-6">4</span></h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light"><img src="imagenes/investigacion.JPG" alt="Imagen del II Taller de Especialización" class="object-fit-contain rounded-top"></div>
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-roja">Club académico</span>
+                            <h3 class="h5 card-title">II Taller de Especialización</h3>
+                            <p class="card-text text-secondary small mb-0">II Taller de especialización de la nueva sede del edificio.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-taller-especializacion.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=taller-especializacion" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light">
+                        <img src="imagenes/arquitectura2.jpg" alt="Imagen del Club de Arquitectura y Diseño Urbano">    
+                        
+                        </div>                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-roja">Club académico</span>
+                            <h3 class="h5 card-title">Club de Arquitectura y Diseño Urbano</h3>
+                            <p class="card-text text-secondary small mb-0">Maquetas, diseño y ciudad: un espacio para estudiantes de arquitectura e ingeniería.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-arquitectura.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=arquitectura" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light"><img src="imagenes/empresas.jpg" alt="Imagen del Club de Emprendimiento e Innovación en Gestión" class="object-fit-contain rounded-top"></div>
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-roja">Club de emprendimiento</span>
+                            <h3 class="h5 card-title">Club de Emprendimiento e Innovación en Gestión</h3>
+                            <p class="card-text text-secondary small mb-0">Club de innovación en gestión por grandes empresas.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-emprendimiento.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=emprendimiento" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-1x1 bg-light"><img src="imagenes/aero.jpg" alt="Imagen del Club de Aviación Comunitaria" class="object-fit-contain rounded-top"></div>
+                        <div class="card-body">
+                            <span class="etiqueta etiqueta-contorno etiqueta-roja">Club aeronáutico</span>
+                            <h3 class="h5 card-title">Club de Aviación Comunitaria</h3>
+                            <p class="card-text text-secondary small mb-0">Club de aviación comunitaria: Net working.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3 d-flex flex-wrap gap-2">
+                            <a href="club-aviacion.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+                            <a href="Register.html?club=aviacion-comunitaria" class="btn btn-usmp btn-sm">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+    <footer>
+        <div class="contenedor contenedor-footer flex-column flex-md-row px-4">
+            <div>
+                <h2>Universidad de San Martín de Porres</h2>
+                <p>Av. Circunvalación del Golf Los Incas Cdra. 3, Santa Anita, Lima</p>
+            </div>
+            <div>
+                <h2>Facultades</h2>
+                <p><a href="https://fia.usmp.edu.pe/" target="_blank" rel="noopener">Ing. y Arquitectura</a></p>
+            </div>
+            <div>
+                <h2>Redes sociales</h2>
+                <p>
+                    <a href="https://www.usmp.edu.pe/" target="_blank" rel="noopener" aria-label="Facebook de la USMP"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.usmp.edu.pe/" target="_blank" rel="noopener" aria-label="Instagram de la USMP"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.usmp.edu.pe/" target="_blank" rel="noopener" aria-label="YouTube de la USMP"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+        <p>© 2026 Universidad de San Martín de Porres</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true, disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches });
+</script>
+</body>
+</html>

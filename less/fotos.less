@@ -1,0 +1,41 @@
+// ============================================================
+//  TAMAÑOS DE FOTOS con LESS  ->  se compila a  css/fotos.css
+//  Compilar:  lessc less/fotos.less css/fotos.css
+
+
+// Variables de tamaño 
+@foto-radio:           10px;   // esquinas redondeadas de las fotos de tarjeta
+@foto-tarjeta-ancho:   50%;    // ancho de la foto dentro de una tarjeta .producto
+@foto-carrera-alto:    120px;  // alto máximo de las fotos en "Ayuda por facultades"
+@carrusel-alto:        430px;  // alto del carrusel de "Clubes abiertos"
+@carrusel-ancho-max:   720px;  // ancho máximo del carrusel de "Clubes abiertos"
+
+// Foto de las tarjetas de clubes y noticias
+.producto img {
+    width: @foto-tarjeta-ancho;
+    border-radius: @foto-radio;
+}
+
+// Fotos de cada carrera (helpE)
+.img-carrera {
+    max-height: @foto-carrera-alto;
+    object-fit: cover;
+}
+
+// Carrusel de la portada de "Clubes abiertos"
+.portada-clubes {
+    .fotodos {
+        max-width: @carrusel-ancho-max;
+    }
+
+    .carousel-item {
+        height: @carrusel-alto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}

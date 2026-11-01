@@ -1,0 +1,33 @@
+// piePG.scss  ->  se compila a  scss/dist/piePG.css
+// Es el mismo CSS de siempre, pero los colores salen de scss/_variables.scss
+@import 'variables';
+
+/* Pie de Pagina
+NO MOVER*/
+
+footer {
+    background-color: $gris-oscuro;
+    color: $blanco;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor-footer {
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contenedor-footer h2 {
+    font-size: 15px;
+}
+
+.contenedor-footer a {
+    color: $gris-claro;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.contenedor-footer a:hover {
+    color: $blanco;
+}

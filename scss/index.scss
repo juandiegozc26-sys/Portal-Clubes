@@ -1,0 +1,28 @@
+// index.scss  ->  se compila a  scss/dist/index.css
+// Es el mismo CSS de siempre, pero los colores salen de scss/_variables.scss
+@import 'variables';
+
+/*pagina principal */
+
+.foto img {
+    text-align: center;
+    padding: 60px auto;
+    border-radius: 5px;
+    width: 500px;
+    box-shadow: $gris-oscuro;
+}
+
+.fila_abajo {
+    display: flex;
+}
+
+iframe {
+    margin: auto;
+}
+.producto {
+    transition: transform 0.3s ease; 
+}
+
+.producto:hover {
+    transform: scale(1.05); 
+}
